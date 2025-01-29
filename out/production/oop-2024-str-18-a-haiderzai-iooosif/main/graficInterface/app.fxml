@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.graficInterface.appController">
+    <children>
+        <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" style="-fx-background-color: #778899;" VBox.vgrow="ALWAYS">
+            <children>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                    <children>
+                        <Button fx:id="voteButton" layoutX="198.0" layoutY="216.0" mnemonicParsing="false" onAction="#vote_button" prefHeight="26.0" prefWidth="79.0" style="-fx-background-color: #00FA9A;" text="Vote">
+                            <font>
+                                <Font name="Apple SD Gothic Neo ExtraBold" size="13.0" />
+                            </font>
+                        </Button>
+                        <Button id="results" layoutX="353.0" layoutY="216.0" mnemonicParsing="false" onAction="#goToSecondWindow" prefHeight="26.0" prefWidth="80.0" style="-fx-background-color: #00FA9A;" text="Results">
+                            <font>
+                                <Font name="Apple SD Gothic Neo ExtraBold" size="13.0" />
+                            </font>
+                        </Button>
+                        <TextArea fx:id="hash_id" editable="false" layoutX="8.0" layoutY="281.0" prefHeight="45.0" prefWidth="628.0">
+                            <font>
+                                <Font name="Apple SD Gothic Neo ExtraBold" size="14.0" />
+                            </font>
+                        </TextArea>
+                        <Button id="exit_id" fx:id="exit_id" layoutX="14.0" layoutY="6.0" mnemonicParsing="false" onAction="#goToLogin" prefHeight="39.0" prefWidth="39.0" style="-fx-background-color: #FFFFFF;  -fx-background-image: url('main/graficInterface/photos/exit.png'); -fx-background-size: cover;     -fx-background-repeat: no-repeat;     -fx-background-color: transparent;     -fx-border-width: 0;     -fx-cursor: hand;" textFill="WHITE">
+                            <font>
+                                <Font name="Apple SD Gothic Neo ExtraBold" size="13.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </AnchorPane>
+                <TextField id="count_id" fx:id="count_id" editable="false" layoutX="571.0" layoutY="7.0" prefHeight="39.0" prefWidth="47.0" style="-fx-background-color: #FFFFFF;">
+                    <font>
+                        <Font name="Apple SD Gothic Neo Heavy" size="18.0" />
+                    </font>
+                </TextField>
+                <Label layoutX="443.0" layoutY="19.0" text="You have votes left:" textFill="WHITE">
+                    <font>
+                        <Font name="Apple SD Gothic Neo Heavy" size="13.0" />
+                    </font>
+                </Label>
+                <ComboBox id="combo_candidates" fx:id="combo_candidates" layoutX="235.0" layoutY="154.0" onAction="#combo_candidates_pam" prefHeight="28.0" prefWidth="160.0" promptText="pick your candidate" style="-fx-border-color: #000000;" />
+            <ImageView fitHeight="60.0" fitWidth="69.0" layoutX="281.0" layoutY="60.0">
+               <image>
+                   <Image fx:id="myImage" url="@photos/app.png" />
+                   </image>
+            </ImageView>
+            <Button id="copy" fx:id="copy" onAction="#copy_buf" layoutX="276.0" layoutY="344.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="80.0" style="-fx-background-color: #00FA9A;" text="Copy">
+               <font>
+                  <Font name="Apple SD Gothic Neo ExtraBold" size="13.0" />
+               </font>
+            </Button>
+            </children>
+        </AnchorPane>
+    </children>
+</VBox>

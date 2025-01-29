@@ -1,0 +1,7 @@
+main
+main.graficInterface
+main.logic
+main.logic.blockchain
+main.logic.db
+main.logic.persons
+main.logic.work

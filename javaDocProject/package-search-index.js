@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"main"},{"l":"main.graficInterface"},{"l":"main.logic"},{"l":"main.logic.blockchain"},{"l":"main.logic.db"},{"l":"main.logic.persons"},{"l":"main.logic.work"}];updateSearchResults();
